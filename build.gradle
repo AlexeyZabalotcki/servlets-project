@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'ru.clevertec.zabalotcki'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation 'org.postgresql:postgresql:42.3.1'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    implementation 'org.flywaydb:flyway-core:9.4.0'
+    implementation 'com.itextpdf:itextpdf:5.5.13'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.28'
+    implementation 'commons-io:commons-io:2.11.0'
+
+}
+

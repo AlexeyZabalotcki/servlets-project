@@ -1,0 +1,3 @@
+url: jdbc:postgresql://localhost:5432/backend
+user: backend
+password: backend_password
